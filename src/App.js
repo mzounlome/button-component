@@ -1,22 +1,11 @@
 import "./App.scss";
 
-import logo from "./logo.svg";
+import SideNav from "./components/SideNav/SideNav";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Pull request 2 for github</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <SideNav />
     </div>
   );
 }

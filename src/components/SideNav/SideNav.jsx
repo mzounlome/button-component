@@ -5,8 +5,28 @@ import React from "react";
 const SideNav = () => {
   return (
     <div className="container">
-      <div className="logo"></div>
-      <div className="sidebar"></div>
+      <div className="logo">
+        <header className="header">DevChallenges. io</header>
+      </div>
+      <div className="sidebar">
+        <ul>
+          <li>
+            <a href="/">Colors</a>
+          </li>
+          <li>
+            <a href="/">Typography</a>
+          </li>
+          <li>
+            <a href="/">Spaces</a>
+          </li>
+          <li>
+            <a href="/">Imputs</a>
+          </li>
+          <li>
+            <a href="/">Grid</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

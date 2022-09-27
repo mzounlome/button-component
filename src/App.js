@@ -1,22 +1,15 @@
 import "./App.scss";
 
-import logo from "./logo.svg";
+import SideNav from "./components/SideNav/SideNav";
+<style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:wght@200&family=Roboto+Condensed:wght@300&family=Roboto+Mono:ital,wght@1,300&family=Spline+Sans+Mono:wght@300&display=swap');
+</style>;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Pull request 2 for github</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <SideNav />
     </div>
   );
 }

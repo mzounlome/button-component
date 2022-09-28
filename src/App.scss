@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:wght@200&family=Roboto+Condensed:wght@300&family=Roboto+Mono:ital,wght@1,300&family=Spline+Sans+Mono:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,5 +9,5 @@
 .container {
   height: 100vh;
   width: 100vw;
-  background-color: blue;
+  display: flex;
 }

@@ -4,7 +4,7 @@ import React from "react";
 
 const SideNav = () => {
   return (
-    <div className="container">
+    <div className="sidenav">
       <div className="logo">
         <header className="header">DevChallenges. io</header>
       </div>

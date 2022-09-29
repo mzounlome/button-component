@@ -19,6 +19,9 @@ function App() {
         <Button endIcon="local_grocery_store" text="Icon" />
         <Button text="Disabled" disabled />
         <Button text="Hover" />
+        <Button text="Primary" color="primary" />
+        <Button text="Secondary" color="secondary" />
+        <Button text="Danger" color="danger" />
       </div>
     </div>
   );

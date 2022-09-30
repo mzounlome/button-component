@@ -11,30 +11,20 @@ const StyledButton = styled.button`
   border-radius: 6px;
  
   color: ${({ color }) =>
+    color === "danger" || "secondary" || "primary" ? "#FFFFFF" : "#3F3F3F"};  
+  background ${({ color }) =>
     color === "danger"
-      ? "#FFFFFF"
-      : color === "secondary"
-      ? "#FFFFFF"
+      ? "#D32F2F"
       : color === "primary"
-      ? "#FFFFFF"
-      : "#3F3F3F"};
-  background: ${({ variant }) =>
-    variant === "outlined" ? "white" : "#E0E0E0"};
-   
-background ${({ color }) =>
-  color === "danger"
-    ? "#D32F2F"
-    : color === "primary"
-    ? "#2962FF"
-    : color === "secondary"
-    ? "#455A64"
-    : "#E0E0E0"};
-  &:hover,
-  &:focus {
-    background: "pink";
-  }
+      ? "#2962FF"
+      : color === "secondary"
+      ? "#455A64"
+      : "#E0E0E0"};
   border: ${({ variant }) =>
     variant === "outlined" ? "1px solid #3D5AFE" : ""};
+    &:hover, focus {
+      cursor: pointer
+    }
 `;
 
 const Button = ({
@@ -56,6 +46,7 @@ const Button = ({
         size={size}
         disabled={disabled}
         hover={hover}
+        focus={focus}
       >
         {startIcon === "local_grocery_store" && <MdOutlineLocalGroceryStore />}{" "}
         {text ? text : "Default"}

@@ -1,5 +1,3 @@
-import "./Button.scss";
-
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import React from "react";
 import styled from "styled-components";

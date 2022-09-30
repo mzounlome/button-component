@@ -1,7 +1,6 @@
 import "./App.scss";
 
 import Button from "./components/Buttons/Button";
-import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import SideNav from "./components/SideNav/SideNav";
 
 function App() {

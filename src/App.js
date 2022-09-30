@@ -1,15 +1,27 @@
 import "./App.scss";
 
+import Button from "./components/Buttons/Button";
 import SideNav from "./components/SideNav/SideNav";
-<style>
-  @import
-  url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:wght@200&family=Roboto+Condensed:wght@300&family=Roboto+Mono:ital,wght@1,300&family=Spline+Sans+Mono:wght@300&display=swap');
-</style>;
 
 function App() {
   return (
     <div className="container">
       <SideNav />
+      <div>
+        <Button />
+        <Button text="Blue Text" color="blue" />
+        <Button size="sm" text="small" />
+        <Button size="md" text="medium" />
+        <Button size="lg" text="large" />
+        <Button size="lg" text="outlined" variant="outlined" />
+        <Button startIcon="local_grocery_store" text="Icon" />
+        <Button endIcon="local_grocery_store" text="Icon" />
+        <Button text="Disabled" disabled />
+        <Button text="Hover" />
+        <Button text="Primary" color="primary" />
+        <Button text="Secondary" color="secondary" />
+        <Button text="Danger" color="danger" />
+      </div>
     </div>
   );
 }

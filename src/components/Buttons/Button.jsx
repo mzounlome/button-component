@@ -13,13 +13,15 @@ const StyledButton = styled.button`
   border-radius: 6px;
  
   color: ${({ color }) =>
-    color === "danger"
+    (color = color
+      ? color
+      : color === "danger"
       ? "#FFFFFF"
       : color === "secondary"
       ? "#FFFFFF"
       : color === "primary"
       ? "#FFFFFF"
-      : "#3F3F3F"};
+      : "#3F3F3F")};
   background: ${({ variant }) =>
     variant === "outlined" ? "white" : "#E0E0E0"};
    

@@ -9,34 +9,44 @@ const StyledButton = styled.button`
     size === "lg" ? "42px" : size === "md" ? "36px" : "32px"};
   box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
   border-radius: 6px;
- 
-  color: ${({ color }) =>
-    (color = color
-      ? color
-      : color === "danger"
-      ? "#FFFFFF"
-      : color === "secondary"
-      ? "#FFFFFF"
-      : color === "primary"
-      ? "#FFFFFF"
-      : "#3F3F3F")};
-  background: ${({ variant }) =>
-    variant === "outlined" ? "white" : "#E0E0E0"};
+
+   color: ${({ color }) =>
+     color && color === "danger"
+       ? "#FFFFFF"
+       : color && color === "secondary"
+       ? color && "#FFFFFF"
+       : color && color === "primary"
+       ? color && "#FFFFFF"
+       : color && color === "white"
+       ? "#FFFFFF"
+       : color && color === "blue"
+       ? "#3D5AFE"
+       : "#3F3F3F"};
+
+
+  
    
-background ${({ color }) =>
-  color === "danger"
+background ${({ color, background, variant }) =>
+  color && color === "danger"
     ? "#D32F2F"
-    : color === "primary"
+    : color && color === "primary"
     ? "#2962FF"
-    : color === "secondary"
+    : color && color === "secondary"
     ? "#455A64"
+    : variant === "outlined"
+    ? "white"
+    : background && background === "blue"
+    ? "#3D5AFE"
+    : background && background === "plain"
+    ? "#FFFFFF"
     : "#E0E0E0"};
   &:hover,
   &:focus {
-    background: "pink";
+    background: "#F0F";
+    cursor: pointer
   }
   border: ${({ variant }) =>
-    variant === "outlined" ? "1px solid #3D5AFE" : ""};
+    variant === "outlined" ? "1px solid #3D5AFE" : "#FFFFFF"};
 `;
 
 const Button = ({
@@ -49,17 +59,21 @@ const Button = ({
   text,
   startIcon,
   disabled,
+  disabledShadow,
+  background,
 }) => {
   return (
     <div className="button-container">
       <StyledButton
         color={color}
+        background={background}
         variant={variant}
         size={size}
         disabled={disabled}
         hover={hover}
+        disabledShadow={disabledShadow}
       >
-        {startIcon === "local_grocery_store" && <MdOutlineLocalGroceryStore />}{" "}
+        {startIcon === "local_grocery_store" && <MdOutlineLocalGroceryStore />}
         {text ? text : "Default"}
         {endIcon === "local_grocery_store" && <MdOutlineLocalGroceryStore />}
       </StyledButton>

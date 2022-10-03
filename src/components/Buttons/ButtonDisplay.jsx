@@ -11,53 +11,121 @@ const ButtonDisplay = () => {
       </div>
 
       <div>
-        <Button />
-        <Button hover text="Default H" />
+        <div className="column">
+          <p>Button</p>
+          <Button />
+        </div>
+        <div className="column">
+          <p> &:hover, &:focus </p>
+          <Button hover text="Default H" />
+        </div>
       </div>
       <div>
-        <Button color="blue" variant="outlined" background="#FFFFFF" />
-        <Button
-          text="Blue Hover"
-          color="blue"
-          variant="outlined"
-          background="#FFFFFF"
-        />
+        <div className="column">
+          <p>Button variant ="outlined"</p>
+          <Button color="blue" variant="outlined" background="#FFFFFF" />
+        </div>
+        <div className="column">
+          <p>&:hover, &:focus</p>
+          <Button
+            text="Blue Hover"
+            color="blue"
+            variant="outlined"
+            background="#FFFFFF"
+          />
+        </div>
       </div>
       <div>
-        <Button color="blue" background="plain" text="Text Var" />
-        <Button color="blue" background="plain" text="Text Hover" />
+        <div className="column">
+          <p>Button variant="text</p>
+
+          <Button color="blue" background="plain" text="Text Var" />
+        </div>
+        <div className="column">
+          <p>&:hover, &:focus</p>
+          <Button color="blue" background="plain" text="Text Hover" />
+        </div>
       </div>
       <div>
-        <Button background="blue" color="white" disabledShadow />
+        <div className="column">
+          <p>Button disableShadow</p>
+          <Button background="blue" color="white" disabledShadow />
+        </div>
       </div>
       <div>
-        <Button text="Disabled" disabled />
-        <Button text="Disabled" background="plain" disabled />
+        <div className="column">
+          <p>Button disabled</p>
+          <Button text="Disabled" disabled />
+        </div>
+        <div className="column">
+          <p>Button variant="text disabled</p>
+          <Button text="Disabled" background="plain" disabled />
+        </div>
       </div>
       <div>
-        <Button
-          color="white"
-          startIcon="local_grocery_store"
-          background="blue"
-        />
-        <Button color="white" endIcon="local_grocery_store" background="blue" />
+        <div className="column">
+          <p>Start Icon</p>
+          <Button
+            color="white"
+            startIcon="local_grocery_store"
+            background="blue"
+          ></Button>
+        </div>
+        <div className="column">
+          <p>End Icon</p>
+          <Button
+            color="white"
+            endIcon="local_grocery_store"
+            background="blue"
+          />{" "}
+        </div>
       </div>
       <div>
-        <Button size="sm" background="blue" color="white" />
-        <Button size="md" background="blue" color="white" />
-        <Button size="lg" background="blue" color="white" />
+        <div className="column">
+          <p>Button size small</p>
+          <Button size="sm" background="blue" color="white" />
+        </div>
+        <div className="column">
+          <p>Button size medium</p>
+          <Button size="md" background="blue" color="white" />
+        </div>
+        <div className="column">
+          <p>Button size large</p>
+          <Button size="lg" background="blue" color="white" />
+        </div>
       </div>
       <div>
-        <Button />
-        <Button text="Primary" color="primary" />
-        <Button text="Secondary" color="secondary" />
-        <Button text="Danger" color="danger" />
+        <div className="column">
+          <p> color default</p>
+          <Button />
+        </div>
+        <div className="column">
+          <p>color primary</p>
+          <Button text="Primary" color="primary" />
+        </div>
+        <div className="column">
+          <p>color secondary</p>
+          <Button text="Secondary" color="secondary" />
+        </div>
+        <div className="column">
+          <p>color danger</p>
+          <Button text="Danger" color="danger" />
+        </div>
       </div>
       <div>
-        <Button text="Default H" />
-        <Button text="Primary" color="primary" />
-        <Button text="Secondary" color="secondary" />
-        <Button text="Danger" color="danger" />
+        <div className="column">
+          <p>&:hover, &:focus</p>
+          <Button text="Default H" />
+        </div>
+        <div className="column bottom-row">
+          <Button text="Primary" color="primary" />
+        </div>
+        <div className="column bottom-row">
+          <Button text="Secondary" color="secondary" />
+        </div>
+        <div className="column bottom-row">
+          <Button text="Danger" color="danger" />
+        </div>
       </div>
       <div>
         <footer>

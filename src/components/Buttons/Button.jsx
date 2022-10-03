@@ -25,6 +25,7 @@ const Button = ({
         disabled={disabled}
         hover={hover}
         disabledShadow={disabledShadow}
+        focus={focus}
       >
         {startIcon === "local_grocery_store" && <MdOutlineLocalGroceryStore />}
         {text ? text : "Default"}

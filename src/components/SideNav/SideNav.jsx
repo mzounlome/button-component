@@ -20,7 +20,7 @@ const SideNav = () => {
             <a href="/">Spaces</a>
           </li>
           <li>
-            <a href="/">Imputs</a>
+            <a href="/">Inputs</a>
           </li>
           <li>
             <a href="/">Grid</a>
